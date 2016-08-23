@@ -1,4 +1,4 @@
-import kafka.consumer.*;
+import kafka.consumer.ConsumerConfig;
 import kafka.consumer.KafkaStream;
 import kafka.javaapi.consumer.ConsumerConnector;
 
@@ -60,7 +60,6 @@ public class ConsumerGroupExample {
 		
 		return new ConsumerConfig(props);
 	}
-	
 	
 	public static void main(String[] args) {
 		String zooKeeper = args[0];
